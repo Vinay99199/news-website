@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansita+Swashed:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansita+Swashed:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
+    
+    <title>News</title>
+</head>
+<body>
+
+    <div class="page-container">
+
+        <!-- header section-->
+
+        <header class="page-header">
+            <div class="header-container">
+                <div class="navigation">
+                    <div class="more-option">
+                        <button class="hamburger hamburger--slider" type="button">
+                            <span class="hamburger-box">
+                              <span class="hamburger-inner"></span>
+                            </span>
+                        </button>                          
+                    </div>
+                    <div class="label ">
+                        <div>
+                            <h1 id="small">The</h1>
+                            <h1>News</h1>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </header>
+
+        <section id="search-section">
+            <div class="search-fields">
+                <div class="search-col">
+                    
+                </div>
+                <div class="search-fields-container">
+                    <div class="search-box">
+                        <p class="search-results">Search results</p>
+                        <div class="search-bar-container">
+                            <input type="text" name="searchBox" id="search" placeholder="search The News">
+                            <button type="submit" id="search-btn">
+                                <i class="fa-solid fa-magnifying-glass" ></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="sortBy-field" class="select-container">
+                        <select name="sortBy" id="sortBy" class="select" >
+                            <option value="publishedAt"> Sort by published at</option>
+                            <option value="relevence">  Sort by relevence</option>
+                            <option value="popularity"> Sort by popularity</option>
+                        </select>
+                    </div>
+                    <div id="language-field" class="select-container">
+                        <select name="lang" id="lang" class="select" >
+                            <option value="en">Search in english</option>
+                            <option value="es">Buscar en español</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+        <!-- <aside id="sidebar">
+            <div id="sidebar-container">
+                <span  id="home"><a href="#">Home</a></span>
+                <span  id="world"><a href="#">World</a></span>
+                <span id="entertainment"><a href="#">Entertainment</a></span>
+                <span id="culture"><a href="#">Culture</a></span>
+                <span id="pop"><a href="#">Pop</a></span>
+            </div>
+        </aside> -->
+        <main id="main-section">
+            <div id="search-news-container">
+
+            </div>
+            <div class="pagenation">
+                <button class="page pageShifter" id="prev"><i class="fa-solid fa-chevron-up"></i></button>
+                <span class="page" id="page-1">1</span>
+                <span class="page" id="page-2">2</span>
+                <span class="page" id="page-3">3</span>
+                <span class="page" id="page-4">4</span>
+                <span class="page" id="page-5">5</span>
+                <span class="page" id="page-6">6</span>
+                <span class="page" id="page-7">7</span>
+                <span class="page" id="page-8">8</span>
+                <span class="page" id="page-9">9</span>
+                <span class="page" id="page-10">10</span>
+                <button class="page pageShifter" id="next"><i class="fa-solid fa-chevron-up"></i></button>
+            </div>
+        </main>
+
+        <template id="card-concept3">
+            <hr id="separator">
+            <article class="news-contianer">
+                <div class="date-container">
+                    <span id="data"></span>
+                </div>
+                <a href="" class="news">
+                    <p class="heading"></p>
+                    <p class="description"></p>
+                    <p class="author"></p>
+                    <hr id="separator">
+                    <span class="source"></span>
+                </a>
+                <div class="img-section">
+                    <figure>
+                        <img src="" alt="" id="img" >
+                    </figure>
+                </div>
+            </article>
+            <hr id="separator">
+
+        </template>
+        <script type ="module" src="js/hamburger.js"> </script>
+        <script src="https://kit.fontawesome.com/2ec1488994.js" crossorigin="anonymous"></script>
+        <script type ="module"src="search.js"></script>
+    </div>
+</body>
+</html>

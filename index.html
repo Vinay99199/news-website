@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansita+Swashed:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansita+Swashed:wght@300..900&display=swap" rel="stylesheet">
+    <title>News</title>
+</head>
+<body>
+
+    <div class="page-container">
+
+        <!-- header section-->
+
+        <header class="page-header">
+            <div class="header-container">
+                <div class="navigation">
+                    <div class="weather">
+                        <div class="weather-container">
+                            <p id="day"></p>
+                            <p id="Location-Temperature"><span id="Location"></span> <span id="temperature"></span></p>
+                            <p id="W-descripiton"></p>
+                        </div>
+                    </div>
+                    <div class="label test">
+                        <h1>The News</h1>
+                    </div>
+                    <div class="search-bar-container">
+                        <div class="search-bar">
+                            <input type="text" name="searchBar" id="search" placeholder="search news">
+                            <button type="submit" class="search-button">
+                                <i class="fa-solid fa-magnifying-glass" ></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                  
+            </div>
+        </header>
+        <nav class="navbar">
+            <ul class="nav-items-container">
+              <li><a href="index.html" id="home">Home</a></li>
+              <li><a href="#" id="local">Local</a></li>
+              <li><a href="#" id="international">International</a></li>
+              <span class="separator">|</span>
+              <li><a href="weather.html" id="weather">Weather</a></li>
+              <li><a href="#" id="sports">Sports</a></li>
+              <li><a href="#" id="economics">Economics</a></li>
+            </ul>
+        </nav>
+        <!-- news-container -->
+        <div class="news-container">
+
+
+            <!-- main-section -->
+
+            <main  class="news-section">
+                <div class="main-newsContainer">
+
+                    <div id="headline-heading">Top Headlines</div>
+                    
+                    <div id="top-headline-section">
+                        <div class="headline-section">
+                            <a class="heading newslink" href="">
+                                <figure>
+                                    <img id="headline-img" src="https://www.reuters.com/resizer/v2/FBZETAEP2NKULNLWNK44H2EMLY.jpg?auth=dcf9b2f231f5cdbf374f253122d42c5839a596d953683e8f6cfef90aa0207e65&height=1005&width=1920&quality=80&smart=true" alt="">
+                                </figure>
+                                <br>
+                                <h2 id="headline-title">Russia pounds Ukraine's power grid in 'massive' air strike - Reuters</h2>
+                                <br>
+                                <p class="newsDescription">"The attack that killed at least seven people and caused "severe damage" to the power system, officials said. Donald Trump has said he will end the war, but has not said how."</p>
+                                <br>
+                                <p class="writtenBy">By<span class="author">Tom Balmforth, Dan Peleschuk</span></p>
+                            </a>
+                        </div>
+                        <div class="other-news">
+        
+        
+                        </div>
+                        
+                    </div>
+                    <!-- <div class="globalNews test"></div> -->
+                </div>
+
+                            
+             <!-- aside-section -->
+                
+                <aside class="latest-news-section">
+                    <div class="latest-news-container">
+                        <h1>Latest</h1>
+                        <hr>
+        
+                    </a>
+        
+                </aside>
+            </main>
+
+            <hr class="section-seperator">
+
+            <section id="weekend-reads-section">
+                <div class="section-heading">Weekend Reads</div>
+                <div class="weekend-reads-container flex-r">
+
+                </div>
+
+            </section>
+
+            <hr class="section-seperator"> 
+
+            <section class="more-news">
+
+            </section>
+
+        </div>
+
+    </div>
+
+    <!-- templates -->
+    <template id="template-news-card">
+        <a class="top-news newslink" href="">
+            <figure  id="news-img-container">
+                <img id="news-img" src="https://www.example.com" alt="">
+            </figure>
+            <div id="news-title-container">
+                <p id="news-title"></p>
+                <span id="source"></span>
+            </div>
+        </a>
+    </template>
+
+    <template class="template-aside-news-card">
+        <a class="aside-news-card newslink" href="">
+            <div class="time-section">
+                <span id="time-holder"></span>
+                <div id="left-border"></div>
+            </div>
+            <div class="aside-news-title">
+                <h3 id="title"></h3>
+                <p id="aside-author"></p>
+            </div>
+        </a>
+    </template>
+
+    <template class="card-concept-3">
+        <article id="card-container" class="newslink">
+            <a class="top-news newslink" href="">
+                <figure  id="news-img-container">
+                    <img id="news-img" src="https://www.reuters.com/resizer/v2/FBZETAEP2NKULNLWNK44H2EMLY.jpg?auth=dcf9b2f231f5cdbf374f253122d42c5839a596d953683e8f6cfef90aa0207e65&height=1005&width=1920&quality=80&smart=true" alt="">
+                </figure>
+                <div id="news-title-container">
+                    <p id="news-title" class="heading"></p>
+                    <p class="newsDescription"></p>
+                    <div class="source-container">
+                        <span id="time"></span>  <span id="separator">|</span>  <span id="source"></span>
+                    </div>
+                </div>
+            </a>
+
+        </article>
+    </template>
+
+    <script src="https://kit.fontawesome.com/2ec1488994.js" crossorigin="anonymous"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
